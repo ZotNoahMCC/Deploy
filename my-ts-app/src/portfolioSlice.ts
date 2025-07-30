@@ -10,7 +10,7 @@ const initialState: PortfolioState = {  projects: [],  status: 'idle',  error: n
 
 export const fetchProjects = createAsyncThunk('portfolio/fetchProjects', async () => {
 
-const response = await axios.get('https://deploy-v3sg.onrender.com');
+const response = await axios.get('https://deploy-v3sg.onrender.com/api/data');
 
 return response.data;
 
